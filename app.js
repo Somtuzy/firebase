@@ -7,7 +7,7 @@ const app = express();
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://tester-fc7ea-default-rtdb.firebaseio.com"
+  databaseURL: process.env.DATABASE_URL
 });
 
 app.get("/", function(req, res) {
