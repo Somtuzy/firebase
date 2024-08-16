@@ -1,7 +1,7 @@
 const express = require('express') ;
 const functions = require("firebase-functions")
 const admin = require("firebase-admin");
-const serviceAccount = require("./tester-fc7ea-firebase-adminsdk-mvh1e-ab6373a822.json") ;
+const serviceAccount = require("./service_account.json") ;
 
 const app = express();
 
